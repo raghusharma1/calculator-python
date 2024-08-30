@@ -1,0 +1,156 @@
+{
+    "C:\\go\\src\\github\\raghusharma1\\calculator-python\\calc.py": {
+        "filename": "C:\\go\\src\\github\\raghusharma1\\calculator-python\\calc.py",
+        "imports": [],
+        "imported_methods": {},
+        "alias_mappings": {},
+        "classes": {
+            "addition": {
+                "code": [
+                    "class addition:\n",
+                    "    def __init__(self):\n",
+                    "        self.calls = list()\n",
+                    "    def addition(num1, num2):\n",
+                    "        \"\"\"Return the sum of two numbers.\"\"\"\n",
+                    "        return num1 + num2\n"
+                ],
+                "constructors": {
+                    "__init__": [
+                        "    def __init__(self):\n",
+                        "        self.calls = list()\n"
+                    ]
+                },
+                "assignments": [
+                    []
+                ],
+                "functionName": [
+                    "addition"
+                ],
+                "methods": {
+                    "addition": {
+                        "input_params": [
+                            {
+                                "name": "num1"
+                            },
+                            {
+                                "name": "num2"
+                            }
+                        ],
+                        "return_type": [],
+                        "external_dependencies": [],
+                        "code": "    def addition(num1, num2):\n        \"\"\"Return the sum of two numbers.\"\"\"\n        return num1 + num2\n",
+                        "name": "addition",
+                        "requires_test": true,
+                        "test_exists": false,
+                        "test_functions": {},
+                        "dependencies": []
+                    }
+                }
+            }
+        },
+        "classesName": [
+            "addition"
+        ],
+        "functions": {
+            "checking_self_requires_test": {
+                "input_params": [
+                    {
+                        "name": "self"
+                    },
+                    {
+                        "name": "num1"
+                    },
+                    {
+                        "name": "num2"
+                    }
+                ],
+                "return_type": [],
+                "external_dependencies": [],
+                "code": "def checking_self_requires_test(self, num1, num2):\n    \"\"\"Return the difference of two numbers.\"\"\"\n    self.calls = [1]\n    return 1\n",
+                "name": "checking_self_requires_test",
+                "requires_test": true,
+                "test_exists": false,
+                "test_functions": {},
+                "dependencies": []
+            },
+            "checking_constant_requires_test": {
+                "input_params": [
+                    {
+                        "name": "num1"
+                    },
+                    {
+                        "name": "num2"
+                    }
+                ],
+                "return_type": [],
+                "external_dependencies": [],
+                "code": "def checking_constant_requires_test(num1, num2):\n    \"\"\"Return the product of two numbers.\"\"\"\n    return 1\n",
+                "name": "checking_constant_requires_test",
+                "requires_test": false,
+                "test_exists": false,
+                "test_functions": {},
+                "dependencies": []
+            },
+            "division": {
+                "input_params": [
+                    {
+                        "name": "num1"
+                    },
+                    {
+                        "name": "num2"
+                    }
+                ],
+                "return_type": [],
+                "external_dependencies": [],
+                "code": "def division(num1, num2):\n    \"\"\"Return the quotient of two numbers, checks for division by zero.\"\"\"\n    if num2 == 0:\n        return \"Cannot divide by zero\"\n    else:\n        return num1 / num2\n",
+                "name": "division",
+                "requires_test": true,
+                "test_exists": false,
+                "test_functions": {},
+                "dependencies": []
+            },
+            "calculator": {
+                "input_params": [
+                    {
+                        "name": "num1"
+                    },
+                    {
+                        "name": "num2"
+                    },
+                    {
+                        "name": "operation"
+                    }
+                ],
+                "return_type": [],
+                "external_dependencies": [
+                    "addition",
+                    "division"
+                ],
+                "code": "def calculator(num1, num2, operation):\n    \"\"\"Directs to the appropriate function based on the operation requested.\"\"\"\n    if operation == '+':\n        return addition(num1, num2)\n    elif operation == '/':\n        return division(num1, num2)\n    else:\n        return \"Invalid operation\"\n",
+                "name": "calculator",
+                "requires_test": true,
+                "test_exists": false,
+                "test_functions": {},
+                "dependencies": [
+                    [
+                        "class addition:\n",
+                        "    def __init__(self):\n",
+                        "        self.calls = list()\n",
+                        "    def addition(num1, num2):\n",
+                        "        \"\"\"Return the sum of two numbers.\"\"\"\n",
+                        "        return num1 + num2\n"
+                    ],
+                    "def division(num1, num2):\n    \"\"\"Return the quotient of two numbers, checks for division by zero.\"\"\"\n    if num2 == 0:\n        return \"Cannot divide by zero\"\n    else:\n        return num1 / num2\n"
+                ]
+            }
+        },
+        "functionName": [
+            "checking_self_requires_test",
+            "checking_constant_requires_test",
+            "division",
+            "calculator"
+        ],
+        "assignments": [],
+        "startupfunctions": "print('Addition Result: ', calculator(10, 5, '+'))\nprint('Subtraction Result: ', calculator(10, 5, '-'))\nprint('Multiplication Result: ', calculator(10, 5, '*'))\nprint('Division Result: ', calculator(10, 5, '/'))\n"
+    }
+}
