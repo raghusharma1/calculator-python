@@ -1,14 +1,20 @@
-def addition(num1, num2):
-    """Return the sum of two numbers."""
-    return num1 + num2
+class addition:
+    def __init__(self):
+        self.calls = list()
+    def addition(num1, num2):
+        """Return the sum of two numbers."""
+        return num1 + num2
 
-def subtraction(num1, num2):
+
+
+def checking_self_requires_test(self, num1, num2):
     """Return the difference of two numbers."""
-    return num1 - num2
+    self.calls = [1]
+    return 1
 
-def multiplication(num1, num2):
+def checking_constant_requires_test(num1, num2):
     """Return the product of two numbers."""
-    return num1 * num2
+    return 1
 
 def division(num1, num2):
     """Return the quotient of two numbers, checks for division by zero."""
@@ -21,10 +27,6 @@ def calculator(num1, num2, operation):
     """Directs to the appropriate function based on the operation requested."""
     if operation == '+':
         return addition(num1, num2)
-    elif operation == '-':
-        return subtraction(num1, num2)
-    elif operation == '*':
-        return multiplication(num1, num2)
     elif operation == '/':
         return division(num1, num2)
     else:
