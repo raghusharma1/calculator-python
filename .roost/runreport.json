@@ -1,0 +1,310 @@
+{
+  "run_id": "e9b66d19",
+  "started_at": "2026-04-30T12:33:36.486917Z",
+  "ended_at": "2026-04-30T12:35:16.501773Z",
+  "status": "failed",
+  "config": {
+    "repo": "C:\\var\\tmp\\Roost\\RoostGPT\\python-test-agent-msr-calc\\1777552365\\source\\calculator-python",
+    "out": "C:\\var\\tmp\\Roost\\RoostGPT\\python-test-agent-msr-calc\\1777552365\\source\\calculator-python",
+    "workers": 10,
+    "scenarios_from": "planner",
+    "provider": "env:AI_TYPE",
+    "model": "gemini/gemini-3-flash-preview",
+    "jedi": true
+  },
+  "summary": {
+    "targets_total": 4,
+    "targets_passed": 0,
+    "targets_failed": 1,
+    "targets_partial": 3,
+    "targets_skipped": 0,
+    "scenarios_total": 18,
+    "scenarios_passed": 0,
+    "scenarios_failed": 18,
+    "coverage_weighted": null,
+    "llm_cost_usd": 0.3183,
+    "llm_input_tokens": 955638,
+    "llm_output_tokens": 25039,
+    "llm_cache_read_input_tokens": 521344,
+    "llm_cache_creation_input_tokens": 0,
+    "llm_api_calls": 79,
+    "elapsed_ms": 0
+  },
+  "targets": [
+    {
+      "target_symbol_id": "calc.SimpleCalculator.addition",
+      "symbol_kind": "staticmethod",
+      "source_file": "calc.py",
+      "source_range": null,
+      "test_file": "",
+      "test_file_hash": "",
+      "test_status": "failed",
+      "iterations": 0,
+      "pivots": 0,
+      "scenarios": [],
+      "coverage_pct": null,
+      "writer_cost_usd": 0.0,
+      "writer_input_tokens": 0,
+      "writer_output_tokens": 0,
+      "writer_cache_read_input_tokens": 0,
+      "writer_cache_creation_input_tokens": 0,
+      "diagnostics": [
+        {
+          "severity": "error",
+          "code": "TASK_CRASHED",
+          "message": "APIConnectionError: litellm.APIConnectionError: GeminiException - [WinError 10054] An existing connection was forcibly closed by the remote host",
+          "symbol": "calc.SimpleCalculator.addition"
+        }
+      ]
+    },
+    {
+      "target_symbol_id": "calc.SimpleCalculator.multiplication",
+      "symbol_kind": "staticmethod",
+      "source_file": "calc.py",
+      "source_range": [
+        18,
+        20
+      ],
+      "test_file": "C:\\var\\tmp\\Roost\\RoostGPT\\python-test-agent-msr-calc\\1777552365\\source\\calculator-python\\module\\test_SimpleCalculator_multiplication.py",
+      "test_file_hash": "sha256:138ba5f6e59a27552f17e08bef04ec04b4cf72f2f83979a0032b95ef9361f902",
+      "test_status": "partial",
+      "iterations": 33,
+      "pivots": 2,
+      "scenarios": [
+        {
+          "scenario_id": "calc.SimpleCalculator.multiplication#0",
+          "scenario_name": "positive_integers",
+          "passed": false,
+          "duration_ms": null,
+          "failure_reason": "no pytest result",
+          "stderr_excerpt": null
+        },
+        {
+          "scenario_id": "calc.SimpleCalculator.multiplication#1",
+          "scenario_name": "negative_numbers",
+          "passed": false,
+          "duration_ms": null,
+          "failure_reason": "no pytest result",
+          "stderr_excerpt": null
+        },
+        {
+          "scenario_id": "calc.SimpleCalculator.multiplication#2",
+          "scenario_name": "mixed_signs",
+          "passed": false,
+          "duration_ms": null,
+          "failure_reason": "no pytest result",
+          "stderr_excerpt": null
+        },
+        {
+          "scenario_id": "calc.SimpleCalculator.multiplication#3",
+          "scenario_name": "multiply_by_zero",
+          "passed": false,
+          "duration_ms": null,
+          "failure_reason": "no pytest result",
+          "stderr_excerpt": null
+        },
+        {
+          "scenario_id": "calc.SimpleCalculator.multiplication#4",
+          "scenario_name": "floating_point",
+          "passed": false,
+          "duration_ms": null,
+          "failure_reason": "no pytest result",
+          "stderr_excerpt": null
+        },
+        {
+          "scenario_id": "calc.SimpleCalculator.multiplication#5",
+          "scenario_name": "multiply_by_one",
+          "passed": false,
+          "duration_ms": null,
+          "failure_reason": "no pytest result",
+          "stderr_excerpt": null
+        }
+      ],
+      "coverage_pct": null,
+      "writer_cost_usd": 0.12304095,
+      "writer_input_tokens": 407427,
+      "writer_output_tokens": 8581,
+      "writer_cache_read_input_tokens": 236479,
+      "writer_cache_creation_input_tokens": 0,
+      "diagnostics": []
+    },
+    {
+      "target_symbol_id": "calc.SimpleCalculator.subtraction",
+      "symbol_kind": "staticmethod",
+      "source_file": "calc.py",
+      "source_range": [
+        13,
+        15
+      ],
+      "test_file": "C:\\var\\tmp\\Roost\\RoostGPT\\python-test-agent-msr-calc\\1777552365\\source\\calculator-python\\module\\test_SimpleCalculator_subtraction.py",
+      "test_file_hash": "sha256:9a0a2be85c387906eded794cd3a5330617100796f1d4611372e32297ccf0953b",
+      "test_status": "partial",
+      "iterations": 25,
+      "pivots": 2,
+      "scenarios": [
+        {
+          "scenario_id": "calc.SimpleCalculator.subtraction#0",
+          "scenario_name": "positive_integers",
+          "passed": false,
+          "duration_ms": null,
+          "failure_reason": "no pytest result",
+          "stderr_excerpt": null
+        },
+        {
+          "scenario_id": "calc.SimpleCalculator.subtraction#1",
+          "scenario_name": "negative_integers",
+          "passed": false,
+          "duration_ms": null,
+          "failure_reason": "no pytest result",
+          "stderr_excerpt": null
+        },
+        {
+          "scenario_id": "calc.SimpleCalculator.subtraction#2",
+          "scenario_name": "floating_point_numbers",
+          "passed": false,
+          "duration_ms": null,
+          "failure_reason": "no pytest result",
+          "stderr_excerpt": null
+        },
+        {
+          "scenario_id": "calc.SimpleCalculator.subtraction#3",
+          "scenario_name": "zero_operands",
+          "passed": false,
+          "duration_ms": null,
+          "failure_reason": "no pytest result",
+          "stderr_excerpt": null
+        },
+        {
+          "scenario_id": "calc.SimpleCalculator.subtraction#4",
+          "scenario_name": "mixed_signs",
+          "passed": false,
+          "duration_ms": null,
+          "failure_reason": "no pytest result",
+          "stderr_excerpt": null
+        },
+        {
+          "scenario_id": "calc.SimpleCalculator.subtraction#5",
+          "scenario_name": "invalid_types",
+          "passed": false,
+          "duration_ms": null,
+          "failure_reason": "no pytest result",
+          "stderr_excerpt": null
+        }
+      ],
+      "coverage_pct": null,
+      "writer_cost_usd": 0.1004361,
+      "writer_input_tokens": 299319,
+      "writer_output_tokens": 8269,
+      "writer_cache_read_input_tokens": 164512,
+      "writer_cache_creation_input_tokens": 0,
+      "diagnostics": []
+    },
+    {
+      "target_symbol_id": "calc.division",
+      "symbol_kind": "function",
+      "source_file": "calc.py",
+      "source_range": [
+        22,
+        27
+      ],
+      "test_file": "C:\\var\\tmp\\Roost\\RoostGPT\\python-test-agent-msr-calc\\1777552365\\source\\calculator-python\\module\\test_division.py",
+      "test_file_hash": "sha256:14df4065ad308264ebcd5e1cf8639f5295acc72a81682b5bd5c8d6c93cfa515e",
+      "test_status": "partial",
+      "iterations": 21,
+      "pivots": 2,
+      "scenarios": [
+        {
+          "scenario_id": "calc.division#0",
+          "scenario_name": "positive_integers",
+          "passed": false,
+          "duration_ms": null,
+          "failure_reason": "no pytest result",
+          "stderr_excerpt": null
+        },
+        {
+          "scenario_id": "calc.division#1",
+          "scenario_name": "negative_dividend",
+          "passed": false,
+          "duration_ms": null,
+          "failure_reason": "no pytest result",
+          "stderr_excerpt": null
+        },
+        {
+          "scenario_id": "calc.division#2",
+          "scenario_name": "floating_point_numbers",
+          "passed": false,
+          "duration_ms": null,
+          "failure_reason": "no pytest result",
+          "stderr_excerpt": null
+        },
+        {
+          "scenario_id": "calc.division#3",
+          "scenario_name": "division_by_zero_int",
+          "passed": false,
+          "duration_ms": null,
+          "failure_reason": "no pytest result",
+          "stderr_excerpt": null
+        },
+        {
+          "scenario_id": "calc.division#4",
+          "scenario_name": "division_by_zero_float",
+          "passed": false,
+          "duration_ms": null,
+          "failure_reason": "no pytest result",
+          "stderr_excerpt": null
+        },
+        {
+          "scenario_id": "calc.division#5",
+          "scenario_name": "zero_dividend",
+          "passed": false,
+          "duration_ms": null,
+          "failure_reason": "no pytest result",
+          "stderr_excerpt": null
+        }
+      ],
+      "coverage_pct": null,
+      "writer_cost_usd": 0.09485414999999997,
+      "writer_input_tokens": 248892,
+      "writer_output_tokens": 8189,
+      "writer_cache_read_input_tokens": 120353,
+      "writer_cache_creation_input_tokens": 0,
+      "diagnostics": []
+    }
+  ],
+  "files_written": [
+    {
+      "path": "module/test_SimpleCalculator_multiplication.py",
+      "hash": "sha256:138ba5f6e59a27552f17e08bef04ec04b4cf72f2f83979a0032b95ef9361f902",
+      "status": "created"
+    },
+    {
+      "path": "module/test_SimpleCalculator_subtraction.py",
+      "hash": "sha256:9a0a2be85c387906eded794cd3a5330617100796f1d4611372e32297ccf0953b",
+      "status": "created"
+    },
+    {
+      "path": "module/test_division.py",
+      "hash": "sha256:14df4065ad308264ebcd5e1cf8639f5295acc72a81682b5bd5c8d6c93cfa515e",
+      "status": "created"
+    }
+  ],
+  "pr_ready": {
+    "branch_suggestion": "roost/python-tests-20260430-1235",
+    "commit_message": "roost-pytest: add 3 test file(s)",
+    "pr_title": "Auto-generated Python unit tests (3 file(s))",
+    "pr_body_markdown": "## Summary\n- 0 targets with fully green tests\n- 3 targets with partial coverage\n\n## Generated test files\n- `module/test_SimpleCalculator_multiplication.py`\n- `module/test_SimpleCalculator_subtraction.py`\n- `module/test_division.py`",
+    "changed_files": [
+      "module/test_SimpleCalculator_multiplication.py",
+      "module/test_SimpleCalculator_subtraction.py",
+      "module/test_division.py"
+    ]
+  },
+  "diagnostics": [
+    {
+      "severity": "error",
+      "code": "TASK_CRASHED",
+      "message": "APIConnectionError: litellm.APIConnectionError: GeminiException - [WinError 10054] An existing connection was forcibly closed by the remote host\ne 14, in map_exceptions\nhttpcore.ReadError: [WinError 10054] An existing connection was forcibly closed by the remote host\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"litellm\\main.py\", line 3451, in completion\n  File \"litellm\\llms\\vertex_ai\\gemini\\vertex_and_google_ai_studio_gemini.py\", line 3097, in completion\n  File \"litellm\\llms\\custom_httpx\\http_handler.py\", line 1087, in post\n  File \"litellm\\llms\\custom_httpx\\http_handler.py\", line 1075, in post\n  File \"httpx\\_client.py\", line 914, in send\n  File \"httpx\\_client.py\", line 942, in _send_handling_auth\n  File \"httpx\\_client.py\", line 979, in _send_handling_redirects\n  File \"httpx\\_client.py\", line 1014, in _send_single_request\n  File \"httpx\\_transports\\default.py\", line 249, in handle_request\n  File \"contextlib.py\", line 162, in __exit__\n  File \"httpx\\_transports\\default.py\", line 118, in map_httpcore_exceptions\nhttpx.ReadError: [WinError 10054] An existing connection was forcibly closed by the remote host\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"roost_pytest\\orchestrator.py\", line 532, in guarded\n  File \"roost_pytest\\orchestrator.py\", line 221, in _one_target\n  File \"asyncio\\threads.py\", line 25, in to_thread\n  File \"concurrent\\futures\\thread.py\", line 59, in run\n  File \"roost_pytest\\planner\\agent.py\", line 185, in run_planner\n  File \"roost_pytest\\llm\\client.py\", line 190, in complete\n  File \"litellm\\utils.py\", line 1772, in wrapper\n  File \"litellm\\utils.py\", line 1593, in wrapper\n  File \"litellm\\main.py\", line 4420, in completion\n  File \"litellm\\litellm_core_utils\\exception_mapping_utils.py\", line 2456, in exception_type\n  File \"litellm\\litellm_core_utils\\exception_mapping_utils.py\", line 2425, in exception_type\nlitellm.exceptions.APIConnectionError: litellm.APIConnectionError: GeminiException - [WinError 10054] An existing connection was forcibly closed by the remote host\n",
+      "symbol": "calc.SimpleCalculator.addition"
+    }
+  ]
+}
