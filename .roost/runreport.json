@@ -1,0 +1,353 @@
+{
+  "run_id": "6deda545",
+  "started_at": "2026-04-30T08:12:06.806867Z",
+  "ended_at": "2026-04-30T08:13:30.904227Z",
+  "status": "failed",
+  "config": {
+    "repo": "C:\\var\\tmp\\Roost\\RoostGPT\\python-test-agent-msr-calc\\1777536684\\source\\calculator-python",
+    "out": "C:\\var\\tmp\\Roost\\RoostGPT\\python-test-agent-msr-calc\\1777536684\\source\\calculator-python",
+    "workers": 10,
+    "scenarios_from": "planner",
+    "provider": "env:AI_TYPE",
+    "model": "gemini/gemini-3-flash-preview",
+    "jedi": true
+  },
+  "summary": {
+    "targets_total": 4,
+    "targets_passed": 0,
+    "targets_failed": 1,
+    "targets_partial": 3,
+    "targets_skipped": 0,
+    "scenarios_total": 23,
+    "scenarios_passed": 0,
+    "scenarios_failed": 23,
+    "coverage_weighted": null,
+    "llm_cost_usd": 0.3498,
+    "llm_input_tokens": 1011988,
+    "llm_output_tokens": 30101,
+    "llm_cache_read_input_tokens": 547870,
+    "llm_cache_creation_input_tokens": 0,
+    "llm_api_calls": 87,
+    "elapsed_ms": 0
+  },
+  "targets": [
+    {
+      "target_symbol_id": "calc.SimpleCalculator.addition",
+      "symbol_kind": "staticmethod",
+      "source_file": "calc.py",
+      "source_range": [
+        8,
+        10
+      ],
+      "test_file": "C:\\var\\tmp\\Roost\\RoostGPT\\python-test-agent-msr-calc\\1777536684\\source\\calculator-python\\module\\test_SimpleCalculator_addition.py",
+      "test_file_hash": "sha256:cc0aa54f1caf6daaafadc2377b8c6b7db9beae064ee17b0be893b72bf5ef8a54",
+      "test_status": "partial",
+      "iterations": 22,
+      "pivots": 2,
+      "scenarios": [
+        {
+          "scenario_id": "calc.SimpleCalculator.addition#0",
+          "scenario_name": "add_positive_integers",
+          "passed": false,
+          "duration_ms": null,
+          "failure_reason": "no pytest result",
+          "stderr_excerpt": null
+        },
+        {
+          "scenario_id": "calc.SimpleCalculator.addition#1",
+          "scenario_name": "add_negative_integers",
+          "passed": false,
+          "duration_ms": null,
+          "failure_reason": "no pytest result",
+          "stderr_excerpt": null
+        },
+        {
+          "scenario_id": "calc.SimpleCalculator.addition#2",
+          "scenario_name": "add_floats",
+          "passed": false,
+          "duration_ms": null,
+          "failure_reason": "no pytest result",
+          "stderr_excerpt": null
+        },
+        {
+          "scenario_id": "calc.SimpleCalculator.addition#3",
+          "scenario_name": "add_zero",
+          "passed": false,
+          "duration_ms": null,
+          "failure_reason": "no pytest result",
+          "stderr_excerpt": null
+        },
+        {
+          "scenario_id": "calc.SimpleCalculator.addition#4",
+          "scenario_name": "add_type_mismatch_error",
+          "passed": false,
+          "duration_ms": null,
+          "failure_reason": "no pytest result",
+          "stderr_excerpt": null
+        }
+      ],
+      "coverage_pct": null,
+      "writer_cost_usd": 0.07011275,
+      "writer_input_tokens": 242590,
+      "writer_output_tokens": 6400,
+      "writer_cache_read_input_tokens": 156405,
+      "writer_cache_creation_input_tokens": 0,
+      "diagnostics": []
+    },
+    {
+      "target_symbol_id": "calc.SimpleCalculator.multiplication",
+      "symbol_kind": "staticmethod",
+      "source_file": "calc.py",
+      "source_range": [
+        18,
+        20
+      ],
+      "test_file": "C:\\var\\tmp\\Roost\\RoostGPT\\python-test-agent-msr-calc\\1777536684\\source\\calculator-python\\module\\test_SimpleCalculator_multiplication.py",
+      "test_file_hash": "sha256:00e47b03687e85b1f721672ec1ebbf7314aeb0de76df362b6171c3ee3992bba3",
+      "test_status": "failed",
+      "iterations": 20,
+      "pivots": 1,
+      "scenarios": [
+        {
+          "scenario_id": "calc.SimpleCalculator.multiplication#0",
+          "scenario_name": "positive_integers",
+          "passed": false,
+          "duration_ms": null,
+          "failure_reason": "no pytest result",
+          "stderr_excerpt": null
+        },
+        {
+          "scenario_id": "calc.SimpleCalculator.multiplication#1",
+          "scenario_name": "negative_numbers",
+          "passed": false,
+          "duration_ms": null,
+          "failure_reason": "no pytest result",
+          "stderr_excerpt": null
+        },
+        {
+          "scenario_id": "calc.SimpleCalculator.multiplication#2",
+          "scenario_name": "zero_multiplication",
+          "passed": false,
+          "duration_ms": null,
+          "failure_reason": "no pytest result",
+          "stderr_excerpt": null
+        },
+        {
+          "scenario_id": "calc.SimpleCalculator.multiplication#3",
+          "scenario_name": "float_multiplication",
+          "passed": false,
+          "duration_ms": null,
+          "failure_reason": "no pytest result",
+          "stderr_excerpt": null
+        },
+        {
+          "scenario_id": "calc.SimpleCalculator.multiplication#4",
+          "scenario_name": "two_negatives",
+          "passed": false,
+          "duration_ms": null,
+          "failure_reason": "no pytest result",
+          "stderr_excerpt": null
+        },
+        {
+          "scenario_id": "calc.SimpleCalculator.multiplication#5",
+          "scenario_name": "incompatible_types",
+          "passed": false,
+          "duration_ms": null,
+          "failure_reason": "no pytest result",
+          "stderr_excerpt": null
+        }
+      ],
+      "coverage_pct": null,
+      "writer_cost_usd": 0.08883545000000001,
+      "writer_input_tokens": 238372,
+      "writer_output_tokens": 8249,
+      "writer_cache_read_input_tokens": 122439,
+      "writer_cache_creation_input_tokens": 0,
+      "diagnostics": [
+        {
+          "severity": "error",
+          "code": "WRITER_GAVE_UP",
+          "message": "writer called finish('failed'): The test file is correctly implemented and covers all scenarios. However, both `pytest_run` and `pytest_collect` fail with an environment-level error: `unrecognized arguments: --report-log`. This suggests that the `pytest-reportlog` plugin is missing in the execution environment, preventing any tests from running or being collected. Since I cannot control the pytest flags or the environment, I cannot produce a 'green' run.; likely_cause=unknown__see_diagnostic_message",
+          "symbol": "calc.SimpleCalculator.multiplication"
+        }
+      ]
+    },
+    {
+      "target_symbol_id": "calc.SimpleCalculator.subtraction",
+      "symbol_kind": "staticmethod",
+      "source_file": "calc.py",
+      "source_range": [
+        13,
+        15
+      ],
+      "test_file": "C:\\var\\tmp\\Roost\\RoostGPT\\python-test-agent-msr-calc\\1777536684\\source\\calculator-python\\module\\test_SimpleCalculator_subtraction.py",
+      "test_file_hash": "sha256:f52663387b5f3de09f04ea0a5ef81e2a7265b125bdff9c8f80415b7554aa82e0",
+      "test_status": "partial",
+      "iterations": 23,
+      "pivots": 2,
+      "scenarios": [
+        {
+          "scenario_id": "calc.SimpleCalculator.subtraction#0",
+          "scenario_name": "positive_integers",
+          "passed": false,
+          "duration_ms": null,
+          "failure_reason": "no pytest result",
+          "stderr_excerpt": null
+        },
+        {
+          "scenario_id": "calc.SimpleCalculator.subtraction#1",
+          "scenario_name": "negative_result",
+          "passed": false,
+          "duration_ms": null,
+          "failure_reason": "no pytest result",
+          "stderr_excerpt": null
+        },
+        {
+          "scenario_id": "calc.SimpleCalculator.subtraction#2",
+          "scenario_name": "subtract_zero",
+          "passed": false,
+          "duration_ms": null,
+          "failure_reason": "no pytest result",
+          "stderr_excerpt": null
+        },
+        {
+          "scenario_id": "calc.SimpleCalculator.subtraction#3",
+          "scenario_name": "subtract_from_zero",
+          "passed": false,
+          "duration_ms": null,
+          "failure_reason": "no pytest result",
+          "stderr_excerpt": null
+        },
+        {
+          "scenario_id": "calc.SimpleCalculator.subtraction#4",
+          "scenario_name": "negative_numbers",
+          "passed": false,
+          "duration_ms": null,
+          "failure_reason": "no pytest result",
+          "stderr_excerpt": null
+        },
+        {
+          "scenario_id": "calc.SimpleCalculator.subtraction#5",
+          "scenario_name": "floating_point_numbers",
+          "passed": false,
+          "duration_ms": null,
+          "failure_reason": "no pytest result",
+          "stderr_excerpt": null
+        }
+      ],
+      "coverage_pct": null,
+      "writer_cost_usd": 0.09452574999999999,
+      "writer_input_tokens": 278087,
+      "writer_output_tokens": 7744,
+      "writer_cache_read_input_tokens": 150555,
+      "writer_cache_creation_input_tokens": 0,
+      "diagnostics": []
+    },
+    {
+      "target_symbol_id": "calc.division",
+      "symbol_kind": "function",
+      "source_file": "calc.py",
+      "source_range": [
+        22,
+        27
+      ],
+      "test_file": "C:\\var\\tmp\\Roost\\RoostGPT\\python-test-agent-msr-calc\\1777536684\\source\\calculator-python\\module\\test_division.py",
+      "test_file_hash": "sha256:ccf8f92a8e3665b02b9d97b009a9058c70b76b300297927d24d898e204c87d68",
+      "test_status": "partial",
+      "iterations": 22,
+      "pivots": 1,
+      "scenarios": [
+        {
+          "scenario_id": "calc.division#0",
+          "scenario_name": "positive_integers_exact",
+          "passed": false,
+          "duration_ms": null,
+          "failure_reason": "no pytest result",
+          "stderr_excerpt": null
+        },
+        {
+          "scenario_id": "calc.division#1",
+          "scenario_name": "positive_integers_float",
+          "passed": false,
+          "duration_ms": null,
+          "failure_reason": "no pytest result",
+          "stderr_excerpt": null
+        },
+        {
+          "scenario_id": "calc.division#2",
+          "scenario_name": "divide_by_int_zero",
+          "passed": false,
+          "duration_ms": null,
+          "failure_reason": "no pytest result",
+          "stderr_excerpt": null
+        },
+        {
+          "scenario_id": "calc.division#3",
+          "scenario_name": "divide_by_float_zero",
+          "passed": false,
+          "duration_ms": null,
+          "failure_reason": "no pytest result",
+          "stderr_excerpt": null
+        },
+        {
+          "scenario_id": "calc.division#4",
+          "scenario_name": "negative_numerator",
+          "passed": false,
+          "duration_ms": null,
+          "failure_reason": "no pytest result",
+          "stderr_excerpt": null
+        },
+        {
+          "scenario_id": "calc.division#5",
+          "scenario_name": "zero_numerator_dividend",
+          "passed": false,
+          "duration_ms": null,
+          "failure_reason": "no pytest result",
+          "stderr_excerpt": null
+        }
+      ],
+      "coverage_pct": null,
+      "writer_cost_usd": 0.09628155,
+      "writer_input_tokens": 252939,
+      "writer_output_tokens": 7708,
+      "writer_cache_read_input_tokens": 118471,
+      "writer_cache_creation_input_tokens": 0,
+      "diagnostics": []
+    }
+  ],
+  "files_written": [
+    {
+      "path": "module/test_SimpleCalculator_addition.py",
+      "hash": "sha256:cc0aa54f1caf6daaafadc2377b8c6b7db9beae064ee17b0be893b72bf5ef8a54",
+      "status": "created"
+    },
+    {
+      "path": "module/test_SimpleCalculator_multiplication.py",
+      "hash": "sha256:00e47b03687e85b1f721672ec1ebbf7314aeb0de76df362b6171c3ee3992bba3",
+      "status": "skipped_stub"
+    },
+    {
+      "path": "module/test_SimpleCalculator_subtraction.py",
+      "hash": "sha256:f52663387b5f3de09f04ea0a5ef81e2a7265b125bdff9c8f80415b7554aa82e0",
+      "status": "created"
+    },
+    {
+      "path": "module/test_division.py",
+      "hash": "sha256:ccf8f92a8e3665b02b9d97b009a9058c70b76b300297927d24d898e204c87d68",
+      "status": "created"
+    }
+  ],
+  "pr_ready": {
+    "branch_suggestion": "roost/python-tests-20260430-0813",
+    "commit_message": "roost-pytest: add 4 test file(s)",
+    "pr_title": "Auto-generated Python unit tests (4 file(s))",
+    "pr_body_markdown": "## Summary\n- 0 targets with fully green tests\n- 3 targets with partial coverage\n\n## Generated test files\n- `module/test_SimpleCalculator_addition.py`\n- `module/test_SimpleCalculator_multiplication.py`\n- `module/test_SimpleCalculator_subtraction.py`\n- `module/test_division.py`",
+    "changed_files": [
+      "module/test_SimpleCalculator_addition.py",
+      "module/test_SimpleCalculator_multiplication.py",
+      "module/test_SimpleCalculator_subtraction.py",
+      "module/test_division.py"
+    ]
+  },
+  "diagnostics": []
+}
