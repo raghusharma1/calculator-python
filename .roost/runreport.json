@@ -1,0 +1,142 @@
+{
+  "run_id": "7e706a99",
+  "started_at": "2026-05-05T10:53:29.473096Z",
+  "ended_at": "2026-05-05T10:53:29.474011Z",
+  "status": "ok",
+  "config": {
+    "repo": "/private/var/tmp/Roost/RoostGPT/python-test-agent-msr-calc/1777978387/source/calculator-python",
+    "out": "/private/var/tmp/Roost/RoostGPT/python-test-agent-msr-calc/1777978387/source/calculator-python",
+    "workers": 10,
+    "scenarios_from": "planner",
+    "provider": "env:AI_TYPE",
+    "model": "gemini/gemini-3-flash-preview",
+    "jedi": true
+  },
+  "summary": {
+    "targets_total": 4,
+    "targets_passed": 0,
+    "targets_failed": 0,
+    "targets_partial": 0,
+    "targets_skipped": 4,
+    "scenarios_total": 0,
+    "scenarios_passed": 0,
+    "scenarios_failed": 0,
+    "coverage_weighted": null,
+    "llm_cost_usd": 0.0,
+    "llm_input_tokens": 0,
+    "llm_output_tokens": 0,
+    "llm_cache_read_input_tokens": 0,
+    "llm_cache_creation_input_tokens": 0,
+    "llm_api_calls": 0,
+    "elapsed_ms": 0
+  },
+  "targets": [
+    {
+      "target_symbol_id": "calc.SimpleCalculator.addition",
+      "symbol_kind": "staticmethod",
+      "source_file": "calc.py",
+      "source_range": null,
+      "test_file": "",
+      "test_file_hash": "",
+      "test_status": "skipped",
+      "iterations": 0,
+      "pivots": 0,
+      "scenarios": [],
+      "coverage_pct": null,
+      "writer_cost_usd": 0.0,
+      "writer_input_tokens": 0,
+      "writer_output_tokens": 0,
+      "writer_cache_read_input_tokens": 0,
+      "writer_cache_creation_input_tokens": 0,
+      "diagnostics": [
+        {
+          "severity": "warning",
+          "code": "ABORTED",
+          "message": "skipped due to signal",
+          "symbol": "calc.SimpleCalculator.addition"
+        }
+      ]
+    },
+    {
+      "target_symbol_id": "calc.SimpleCalculator.multiplication",
+      "symbol_kind": "staticmethod",
+      "source_file": "calc.py",
+      "source_range": null,
+      "test_file": "",
+      "test_file_hash": "",
+      "test_status": "skipped",
+      "iterations": 0,
+      "pivots": 0,
+      "scenarios": [],
+      "coverage_pct": null,
+      "writer_cost_usd": 0.0,
+      "writer_input_tokens": 0,
+      "writer_output_tokens": 0,
+      "writer_cache_read_input_tokens": 0,
+      "writer_cache_creation_input_tokens": 0,
+      "diagnostics": [
+        {
+          "severity": "warning",
+          "code": "ABORTED",
+          "message": "skipped due to signal",
+          "symbol": "calc.SimpleCalculator.multiplication"
+        }
+      ]
+    },
+    {
+      "target_symbol_id": "calc.SimpleCalculator.subtraction",
+      "symbol_kind": "staticmethod",
+      "source_file": "calc.py",
+      "source_range": null,
+      "test_file": "",
+      "test_file_hash": "",
+      "test_status": "skipped",
+      "iterations": 0,
+      "pivots": 0,
+      "scenarios": [],
+      "coverage_pct": null,
+      "writer_cost_usd": 0.0,
+      "writer_input_tokens": 0,
+      "writer_output_tokens": 0,
+      "writer_cache_read_input_tokens": 0,
+      "writer_cache_creation_input_tokens": 0,
+      "diagnostics": [
+        {
+          "severity": "warning",
+          "code": "ABORTED",
+          "message": "skipped due to signal",
+          "symbol": "calc.SimpleCalculator.subtraction"
+        }
+      ]
+    },
+    {
+      "target_symbol_id": "calc.division",
+      "symbol_kind": "function",
+      "source_file": "calc.py",
+      "source_range": null,
+      "test_file": "",
+      "test_file_hash": "",
+      "test_status": "skipped",
+      "iterations": 0,
+      "pivots": 0,
+      "scenarios": [],
+      "coverage_pct": null,
+      "writer_cost_usd": 0.0,
+      "writer_input_tokens": 0,
+      "writer_output_tokens": 0,
+      "writer_cache_read_input_tokens": 0,
+      "writer_cache_creation_input_tokens": 0,
+      "diagnostics": [
+        {
+          "severity": "warning",
+          "code": "ABORTED",
+          "message": "skipped due to signal",
+          "symbol": "calc.division"
+        }
+      ]
+    }
+  ],
+  "files_written": [],
+  "pr_ready": null,
+  "diagnostics": []
+}
